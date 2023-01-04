@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>BAI TAP JS BUOI5</title>
+
+</head>
+
+<body style="padding: 50px; background-color: aliceblue;" class="container">
+    <h1 class="text-center" style="color: red">BAI TAP THEM JS BUOI 5</h1>
+    <hr>
+    <br>
+    <h2>Bài 1: Tính thuế thu nhập cá nhân</h2>
+    <br>
+    <input id="name" type="text" placeholder="Họ tên">
+    <input id="income" type="text" placeholder="Tổng số thu nhập">
+    <select class="btn btn-success" id="numberDependencies">
+        <option value="0">Số người phụ thuộc</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <br>
+    <table class="table mt-5">
+        <thead class="thead-dark">
+            <tr>
+                <th>Họ tên</th>
+                <th>Tổng thu nhập năm (VNĐ)</th>
+                <th>Số người phụ thuộc</th>
+                <th>Thu nhập chịu thuế (VNĐ)</th>
+                <th>Thuế thu nhập cá nhân (VNĐ)</th>
+            </tr>
+        </thead>
+        <tbody id="student-list"></tbody>
+    </table>
+    <br>
+    <button id="test" class="btn btn-primary">Kiểm tra</button>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Bài 2: Tính tiền cáp</h2>
+    <br>
+    <select class="btn btn-success" id="type" onchange="myFunction()">
+        <option value="0">Bạn là ai?</option>
+        <option id="house" value="Hộ dân">Hộ dân</option>
+        <option id="business" value="Doanh nghiệp">Doanh nghiệp</option>
+    </select>
+    <input id="identifiedCode" type="text" value="" placeholder="Mã khách hàng">
+    <input id="numberChanel" type="text" value="" placeholder="Số kênh cao cấp">
+    <input style="display: none;" id="number" type="text" value="" placeholder="Số kết nối">
+    <!-- <input id="result2" type="text" value="" placeholder="Kết quả"> -->
+    <table class="table mt-5">
+        <thead class="thead-dark">
+            <tr>
+                <th>Mã khách hàng</th>
+                <th>Số kênh cao cấp</th>
+                <th>Loại Khách hàng</th>
+                <th>Số kết nối</th>
+                <th>Tổng chi phí ($)</th>
+            </tr>
+        </thead>
+        <tbody id="customer-list"></tbody>
+    </table>
+    <br>
+    <br>
+    <button class="btn btn-primary" id="calculate">Tính tiền cáp</button>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <i class="fa-solid fa-hand-back-point-left"></i>
+    <script src="./Js/Index.js"></script>
+</body>
+
+</html>
